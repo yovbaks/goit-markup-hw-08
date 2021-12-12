@@ -1,0 +1,120 @@
+.page-footer {
+  background-color: var(--bgcolor-accent);
+  padding-top: 60px;
+  padding-bottom: 60px;
+    &__logo{
+    color: var(--white-color);
+    display: inline-block;
+    margin-bottom: 20px;
+    }
+    &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--white-color);
+      margin-bottom: 20px;
+}
+
+
+.address {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 9px;
+}
+
+
+.footer-contacts{
+      &__link {
+          display: block;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 14px;
+          line-height: 1.7;
+      }
+      &__item {
+          margin-bottom: 9px;
+      }
+      &__item--margin{
+          margin-bottom: 0px;
+      }
+}
+
+
+.social {
+  margin-left: 70px;
+
+      &__list {
+         display: flex;
+      }
+      &__icon {
+          display: flex;
+          width: 44px;
+          height: 44px;
+          background-color: rgba(255, 255, 255, 0.1);
+          fill: var(--white-color);
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          transition: background-color var(--ttime) var(--cubic);
+      }
+      &__item {
+          margin-right: 10px;
+      }
+      &__item--margin {
+          margin-right: 0px;
+      }
+      &__icon:hover,
+      &__icon:focus {
+          background-color: var(--theme-color);
+      }
+}
+
+
+
+
+.subscribe {
+  margin-left: 93px;
+
+        &__form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &__input {
+            min-width: 358px;
+            height: 50px;
+            background-color: transparent;
+            font-size: 16px;
+            line-height: 1.25;
+            padding: 15px 16px;
+            letter-spacing: 0.03em;
+            outline: none;
+            color: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            margin-right: 12px;
+                  &::placeholder {
+                      color: rgba(255, 255, 255, 0.6);
+                  }
+          }
+        &__icon {
+            margin-left: 10px;
+            fill: var(--white-color);
+                  .subscribe__button:hover & {
+                     fill: var(--title-color);
+                  }
+        }
+}
+
+

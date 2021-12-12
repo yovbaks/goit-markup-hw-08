@@ -1,0 +1,30 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    cursor: pointer;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-color: transparent;
+
+	font-family: inherit;
+	background-color: var(--theme-color);
+	color: var(--white-color);
+	font-weight: 700;
+	line-height: 1.87;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	transition: background-color var(--ttime) var(--cubic);
+
+	&:hover,
+	&:focus {
+		background-color: #188ce8;
+	}
+}
+

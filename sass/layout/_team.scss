@@ -1,0 +1,58 @@
+.team {
+  background-color: var(--bgcolor2);
+      &__list {
+          display: flex;
+          justify-content: center;
+      }
+      &__item {
+          box-shadow: var(--box-shadows);
+          border-radius: 0px 0px 4px 4px;
+          background-color: #ffffff;
+          margin-right: 30px;
+      }
+      &__item--margin {
+           margin-right:0px;
+      }
+      &__thumb {
+           padding-top: 30px;
+           padding-bottom: 30px;
+           text-align: center;
+      } 
+      &__title {
+           color: var(--title-color);
+           font-weight: 500;
+            font-size: 16px;
+            line-height: 1.2;
+           letter-spacing: 0.03em;
+           margin-bottom: 10px;
+     }
+     &__text {
+           font-size: 16px;
+           line-height: 1.2;
+           letter-spacing: 0.03em;
+           margin-bottom: 16px;
+     }
+     &__social {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     &__icon {
+          display: flex;
+          width: 44px;
+          height: 44px;
+          background-color: rgba(255, 255, 255, 0.1);
+          fill: var(--clients-color);
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          transition: background-color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
+              
+              &:hover,
+              &:focus {
+                fill: var(--white-color);
+                background-color: var(--theme-color);
+                background-size: 44px;
+              }
+       }
+}

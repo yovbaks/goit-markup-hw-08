@@ -1,0 +1,35 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+
+      &__button {
+        padding: 6px 22px;
+        background-color: var(--bgcolor2);
+        color: var(--title-color);
+        border-color: var(--bgcolor2);
+        box-shadow: none;
+        min-width: 73px;
+        border-style: none;
+        box-shadow: var(--box-shadow);
+        border-radius: 4px;
+
+        transition: background-color var(--ttime) var(--cubic), color var(--ttime) var(--cubic),
+          box-shadow var(--ttime) var(--cubic);
+
+            &--active:hover,
+            &--active:focus {
+              color: var(--white-color);
+              background-color: var(--theme-color);
+              border-color: var(--theme-color);
+              box-shadow: var(--box-shadows-btn);
+            }
+      }
+        &__item {
+          margin-right: 8px;
+        }
+        &__item--margin {
+          margin-right: 0px;
+        }
+}
