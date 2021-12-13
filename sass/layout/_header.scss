@@ -21,12 +21,13 @@
         &__link {
           position: relative;
           display: block;
-          padding-top: 32px;
-          padding-bottom: 32px;
           font-weight: 500;
           font-size: 14px;
           line-height: 1.14;
           letter-spacing: 0.02em;
+          padding-top: 32px;
+          padding-bottom: 32px;
+          
           color: var(--title-color);
           transition: color var(--ttime) var(--cubic);
 
@@ -42,13 +43,12 @@
 
         &__link--current::after {
           position: absolute;
-          left: 0;
-          bottom: 0;
-
           display: block;
           content: '';
           width: 100%;
           height: 4px;
+          left: 0;
+          bottom: 0;
           border-radius: 2px;
           background-color: var(--theme-color);
           /* margin-top: 28px; */
@@ -64,27 +64,30 @@
         margin-left: 50px;
       }
       &__link {
-        color: var(--text-color);
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+        color: var(--text-color);
+        
         transition: color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
-        &:hover,
-        &:focus {
-          color: var(--theme-color);
-        }
+
+              &:hover,
+              &:focus {
+                color: var(--theme-color);
+              }
       }
+
       &__link {
         display: flex;
         justify-content: center;
         align-items: center;
         fill: var(--clients-color);
       
-          &:hover,
-          &:focus {
-            fill: var(--theme-color);
-          }
+            &:hover,
+            &:focus {
+              fill: var(--theme-color);
+            }
       }
       &__icon {
         margin-right: 10px;

@@ -5,12 +5,13 @@
   margin-bottom: 50px;
 
       &__button {
+        min-width: 73px;
         padding: 6px 22px;
-        background-color: var(--bgcolor2);
         color: var(--title-color);
+        background-color: var(--bgcolor2);
         border-color: var(--bgcolor2);
         box-shadow: none;
-        min-width: 73px;
+        
         border-style: none;
         box-shadow: var(--box-shadow);
         border-radius: 4px;
