@@ -1,5 +1,5 @@
 .hero {
-  min-width: 480px;
+  width: 100%;
   // max-width: 1600px;
   // height: 600px;
   text-align: center;
@@ -13,13 +13,13 @@
   margin-left: auto;
   margin-right: auto;
 
-              @media screen and (min-width: $mobile) {
-                width: 480px;
+              // @media screen and (min-width: $mobile) {
+              //   width: 480px;
 
-              }
-              @media screen and (min-width: $tablet) {
-                width: 768px;
-              }
+              // }
+              // @media screen and (min-width: $tablet) {
+              //   width: 768px;
+              // }
               @media screen and (min-width: $desktop) {
                   width: 1600px;
                   padding-top: 200px;
