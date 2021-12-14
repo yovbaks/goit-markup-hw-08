@@ -1,21 +1,31 @@
 
 .features{
-//     @media screen and (max-width: 1200px) {
-//         display: none;
-// }
+
         
     
 
       &__list {
-          // display: flex;
-          // justify-content: space-between;
+        @media screen and (min-width: 768px){
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-right: -30px;}
+      }
         
-          }
+          
 
       &__item {
          
           width: 100%;
           // margin-left: 30px;
+           @media screen and (min-width: 768px)  {
+                    flex-basis: calc(100% / 2 - 30px);
+                    margin-right: 30px;
+          }
+          @media screen and (min-width: 1200px)  {
+               flex-basis: calc(100% / 4 - 30px);
+               margin-right: 30px;
+          }
           }
 
       // &__item--margin {
