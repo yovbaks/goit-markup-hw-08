@@ -17,12 +17,31 @@
           }
           @media screen and (min-width: $desktop)  {
             display: flex;
+            justify-content: center;
             align-items: baseline;
                
           }
   }
 }
 
+.tablet-wrap{
+
+  @media screen and (min-width: $tablet)  {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: 76px;
+            margin-right: 89px;
+               
+          }
+          @media screen and (min-width: $desktop)  {
+            display: flex;
+            align-items: baseline;
+            margin-left:0px;
+            margin-right: 0px;
+               
+          }
+}
 
 .footer-adress{
    @media screen and (max-width: $desktop) {
@@ -126,6 +145,7 @@
 
 .subscribe {
   // margin-left: 93px;
+  
   @media screen and (max-width: $desktop){
               display: flex;
               flex-direction: column;
@@ -155,8 +175,8 @@
             padding: 15px 16px;
             letter-spacing: 0.03em;
             outline: none;
-            // min-width: 358px;
-            min-width: 450px;
+            min-width: 358px;
+            
             height: 50px;
             background-color: transparent;
             
@@ -167,7 +187,7 @@
             // margin-right: 12px;
             margin-bottom: 20px;
             
-            @media screen and (min-width: 1200px){
+            @media screen and (min-width: $desktop){
               min-width: 358px;
                margin-right: 12px;
                margin-bottom: 0px;
@@ -186,6 +206,7 @@
                      fill: var(--title-color);
                   }
         }
+
 }
 
 
