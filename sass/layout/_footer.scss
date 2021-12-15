@@ -10,10 +10,21 @@
     }
 
     &__container {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
   }
 }
+
+
+.footer-adress{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 60px;
+
+}
+
 
 .footer-title {
       font-weight: 700;
@@ -54,7 +65,12 @@
 
 
 .social {
-  margin-left: 70px;
+  // margin-left: 70px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 60px;
 
       &__list {
          display: flex;
@@ -87,12 +103,17 @@
 
 
 .subscribe {
-  margin-left: 93px;
+  // margin-left: 93px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
 
         &__form {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
         }
         &__input {
             font-size: 16px;
@@ -100,7 +121,8 @@
             padding: 15px 16px;
             letter-spacing: 0.03em;
             outline: none;
-            min-width: 358px;
+            // min-width: 358px;
+            min-width: 450px;
             height: 50px;
             background-color: transparent;
             
@@ -108,7 +130,8 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
-            margin-right: 12px;
+            // margin-right: 12px;
+            margin-bottom: 20px;
 
                   &::placeholder {
                       color: rgba(255, 255, 255, 0.6);
