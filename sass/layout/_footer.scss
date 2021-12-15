@@ -28,10 +28,10 @@
 
   @media screen and (min-width: $tablet)  {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-start;
-            margin-left: 76px;
-            margin-right: 89px;
+            // margin-left: 76px;
+            // margin-right: 89px;
                
           }
           @media screen and (min-width: $desktop)  {

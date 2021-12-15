@@ -401,7 +401,6 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
   }
 }
 
@@ -600,7 +599,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
@@ -684,10 +682,8 @@ li {
 @media screen and (min-width: 768px) {
   .tablet-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    margin-left: 76px;
-    margin-right: 89px;
   }
 }
 
