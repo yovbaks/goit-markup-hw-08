@@ -186,6 +186,9 @@
             border-radius: 4px;
             // margin-right: 12px;
             margin-bottom: 20px;
+            @media screen and (min-width: $tablet){
+              min-width: 450px;
+            }
             
             @media screen and (min-width: $desktop){
               min-width: 358px;
