@@ -401,6 +401,13 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin-right: 0px;
   }
 }
 
@@ -599,7 +606,17 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: -30px;
   margin-bottom: -30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0px;
+  }
 }
 
 .clients__item {
