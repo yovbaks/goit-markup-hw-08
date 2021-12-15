@@ -514,6 +514,15 @@ li {
   margin-right: 0px;
 }
 
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 .projects__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
@@ -609,6 +618,12 @@ li {
 
 .clients__item {
   height: 92px;
+}
+
+@media screen and (max-width: 480px) {
+  .clients__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
