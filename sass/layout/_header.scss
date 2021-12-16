@@ -1,9 +1,25 @@
 .page-header {
+  position: relative;
+  
   border-bottom: 1px solid #ececec;
+  
+
+}
+
+.mobile-menu-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsla(9, 100%, 64%, 0.258);
+  padding: 15px;
+  text-align: center;
+
 }
 
 .menu-container{
-   
+  
+     
         @media screen and (max-width: $tablet){
               display: none;
               
@@ -21,12 +37,53 @@
         }
         
 }
+.menu-button{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 0px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  
+  
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross{
+  display: none;
+}
+
+.menu-button.is-open .icon-cross{
+  display: block;
+}
+.menu-button.is-open .icon-menu{
+  display: none;
+}
+
 .site-nav {
+  
         @media screen and (min-width: $tablet){
               display: flex;
               align-items: center;
               // justify-content: space-between;
               
+        }
+
+        &__wrap{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
 
         &__list {
