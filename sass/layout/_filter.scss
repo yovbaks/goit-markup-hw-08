@@ -1,8 +1,16 @@
 .filter {
   display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // align-content: center;
+  margin-bottom: 50px;
+   @media screen and (min-width: $tablet)  {
+     display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin-bottom: 50px;
+                    
+          }
 
       &__button {
         min-width: 73px;
@@ -18,6 +26,7 @@
 
         transition: background-color var(--ttime) var(--cubic), color var(--ttime) var(--cubic),
           box-shadow var(--ttime) var(--cubic);
+          margin-bottom: 15px;
 
             &--active:hover,
             &--active:focus {
