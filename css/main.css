@@ -122,10 +122,17 @@ li {
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__first-part {
@@ -136,14 +143,25 @@ li {
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.site-nav__list {
-  display: flex;
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .site-nav__list {
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__list {
+    display: flex;
+    margin-left: 88px;
+  }
 }
 
 .site-nav__item {
@@ -188,36 +206,76 @@ li {
   /* margin-top: 28px; */
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.contacts__item--margin {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
 }
 
-.contacts__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  transition: color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
 }
 
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--theme-color);
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item--margin {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item--margin {
+    margin-left: 50px;
+  }
 }
 
 .contacts__link {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
   fill: var(--clients-color);
+  transition: color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    line-height: 1.17;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__link:hover, .contacts__link:focus {
+  color: var(--theme-color);
   fill: var(--theme-color);
 }
 

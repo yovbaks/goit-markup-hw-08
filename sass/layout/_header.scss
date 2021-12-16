@@ -3,16 +3,29 @@
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
+        @media screen and (min-width: $tablet){
+              display: flex;
+              align-items: center;
+        }
 
         &__list {
-          display: flex;
-          margin-left: 93px;
+          
+
+          @media screen and (min-width: $tablet){
+              display: flex;
+              
+              margin-left: 93px;
+                              
+          }
+          @media screen and (min-width: $desktop){
+              display: flex;
+              margin-left: 88px;
+          }
         }
 
         &__item {
           margin-right: 50px;
+          
         }
         &__item--margin {
           margin-right: 0px;
@@ -57,38 +70,82 @@
 
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  
+          @media screen and (min-width: $tablet){
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              
+                        }
+                @media screen and (min-width: $desktop){
+                     display: flex;
+                     flex-direction: row;
+                     margin-left: auto;
+                }
 
-      &__item--margin {
-        margin-left: 50px;
+
+     
+
+
+      &__item{
+          @media screen and (min-width: $tablet){
+              align-items: flex-start;
+              margin-bottom: 10px;
+                              
+          }
+          @media screen and (min-width: $desktop){
+             margin-bottom: 0px;
+              
+          }
+
+
       }
-      &__link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--text-color);
+       &__item--margin {
+        @media screen and (min-width: $tablet){
+             margin-bottom: 0px;
+        }    
+        @media screen and (min-width: $desktop){
+              margin-left: 50px;
+          }
         
-        transition: color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
-
-              &:hover,
-              &:focus {
-                color: var(--theme-color);
-              }
       }
+
 
       &__link {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 12px;
+        line-height: 1.17;
+        font-weight: 500;
+        
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        
         fill: var(--clients-color);
-      
-            &:hover,
-            &:focus {
-              fill: var(--theme-color);
-            }
+        
+        transition: color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
+
+          @media screen and (min-width: $tablet){
+             line-height: 1.17;
+             font-weight: 500;
+              
+                              
+          }
+          @media screen and (min-width: $desktop){
+              font-size: 14px;
+              line-height: 1.14;
+          }
+
+
+              &:hover,
+              &:focus {
+                color: var(--theme-color);
+                fill: var(--theme-color);
+              }
       }
+
+     
       &__icon {
         margin-right: 10px;
       }  
