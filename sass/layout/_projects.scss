@@ -19,11 +19,12 @@
           }
 
           &__item {
-            @media screen and (min-width: $mobile){
-                    margin-top: 30px;
-              
-                }
 
+            margin-top: 30px;
+            // @media screen and (min-width: $mobile){
+            //         margin-top: 30px;
+              
+            //     }
 
                 @media screen and (min-width: $tablet){
                     position: relative;
