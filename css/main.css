@@ -607,6 +607,12 @@ li {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .projects__item {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects__item {
     position: relative;

@@ -19,6 +19,10 @@
           }
 
           &__item {
+            @media screen and (min-width: $mobile){
+                    margin-top: 30px;
+              
+                }
 
 
                 @media screen and (min-width: $tablet){
@@ -42,15 +46,17 @@
           }
 
           &__link {
+
             display: block;
             transition: box-shadow var(--ttime) var(--cubic);
-            @media screen and (min-width: $tablet) {
-              
-              display: flex;
-              flex-direction: column;
-              height: 100%;
 
-            }
+              @media screen and (min-width: $tablet) {
+                
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+              }
 
                   &:hover,
                   &:focus {
@@ -82,7 +88,7 @@
             border-left: 1px solid var(--gallery-border);
             border-bottom: 1px solid var(--gallery-border);
             border-right: 1px solid var(--gallery-border);
-            
+
                   @media screen and (min-width: $tablet) {
                         flex-grow: 1;
                   }
