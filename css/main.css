@@ -429,6 +429,10 @@ li {
   background-color: #188ce8;
 }
 
+.features__list {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .features__list {
     display: flex;
@@ -438,10 +442,15 @@ li {
   }
 }
 
+.features__item {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .features__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -449,6 +458,7 @@ li {
   .features__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
