@@ -22,6 +22,9 @@ body {
   color: var(--text-color);
   background-color: var(--white-color);
 }
+body.modal-open{
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
