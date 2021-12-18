@@ -431,6 +431,7 @@ li {
 
 .features__list {
   margin-bottom: -30px;
+  margin-right: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -884,19 +885,21 @@ li {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-footer__container {
     display: flex;
     justify-content: center;
     align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-tablet-wrap {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
   }
 }
 
