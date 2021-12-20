@@ -29,11 +29,13 @@
               align-items: center;
               justify-content: space-between;
               width: 100%;
+              margin-left: 93px;
         }
          @media screen and (min-width: $desktop){
               display: flex;
               align-items: center;
               justify-content: space-between;
+              margin-left: 88px;
         }
         
 }
@@ -90,24 +92,24 @@
           
           @media screen and (min-width: $tablet){
               display: flex;
-              margin-left: 93px;
+              
              
                               
           }
           @media screen and (min-width: $desktop){
               display: flex;
-              margin-left: 88px;
+              
           }
         }
 
-        &__item {
+        &__item:not(:last-child) {
           margin-right: 50px;
           
         }
 
-        &__item--margin {
-          margin-right: 0px;
-        }
+        // &__item--margin {
+        //   margin-right: 0px;
+        // }
 
         &__link {
           position: relative;
@@ -164,31 +166,34 @@
                 }
 
 
-     
 
 
-      &__item{
-          @media screen and (min-width: $tablet){
+
+      &__item:not(:last-child){
+          @media screen and (max-width: $desktop){
               align-items: flex-start;
               margin-bottom: 10px;
                               
           }
+      }         
+      &__item:not(:first-child){
           @media screen and (min-width: $desktop){
-             margin-bottom: 0px;
+            margin-left: 50px;
+            margin-bottom: 0px;
               
           }
-
-
-      }
-       &__item--margin {
-        @media screen and (min-width: $tablet){
-             margin-bottom: 0px;
-        }    
-        @media screen and (min-width: $desktop){
-              margin-left: 50px;
-          }
         
-      }
+
+    }
+      //  &__item--margin {
+      //   @media screen and (min-width: $tablet){
+      //        margin-bottom: 0px;
+      //   }    
+      //   @media screen and (min-width: $desktop){
+      //         margin-left: 50px;
+      //     }
+        
+      // }
 
 
       &__link {

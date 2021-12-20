@@ -16,14 +16,13 @@
                   flex-wrap: wrap;
                   flex-direction: row;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: baseline;
                   
-                    // flex-basis: calc(100% / 2 - 30px);
-                    // margin-right: 30px;
+                   
           }
           @media screen and (min-width: $desktop)  {
             display: flex;
-            justify-content: center;
+           
             align-items: baseline;
                
           }
@@ -31,30 +30,15 @@
   
 }
 
-.footer-tablet-wrap{
 
-  // @media screen and (min-width: $tablet)  {
-  //           display: flex;
-  //           justify-content: space-around;
-  //           align-items: flex-start;
-  //           // margin-left: 76px;
-  //           // margin-right: 89px;               
-  //         }
-          @media screen and (min-width: $desktop)  {
-            display: flex;
-            align-items: baseline;
-            margin-left:0px;
-            margin-right: 0px;
-               
-          }
-}
 
 .footer-adress{
    @media screen and (max-width: $desktop) {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
+              // display: flex;
+              // flex-direction: column;
+              // justify-content: center;
+              // align-items: center;
+              text-align: center;
               margin-bottom: 60px;
    }
   

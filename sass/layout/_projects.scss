@@ -1,12 +1,13 @@
 .projects{
 
           &__list {
-             margin-top: -30px;
+            
             
                 @media screen and (min-width: $tablet){
                       display: flex;
                       flex-wrap: wrap;
                       margin-left: -30px;
+                       margin-top: -30px;
                 }
                 @media screen and (min-width: $desktop){
                       display: flex;
@@ -18,14 +19,14 @@
         
           }
 
-          &__item {
-
-            margin-top: 30px;
-            // @media screen and (min-width: $mobile){
-            //         margin-top: 30px;
+          &__item {     
+            
+            @media screen and (max-width: $tablet){
+                  &:not(:last-child){
+                    margin-bottom: 30px;
+                  }
+              }    
               
-            //     }
-
                 @media screen and (min-width: $tablet){
                     position: relative;
                     flex-basis: calc(100% / 2 - 30px);
@@ -42,9 +43,11 @@
                     margin-top: 30px;
               
                 }
+               
 
             
           }
+          
 
           &__link {
 

@@ -1,15 +1,26 @@
 .filter {
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: center;
-  // align-content: center;
-  margin-bottom: 50px;
-   @media screen and (min-width: $tablet)  {
-     display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-                    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: -8px;
+	  margin-top: -15px;
+
+        @media screen and (min-width: $tablet)  {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+                          
+        }
+        @media screen and (min-width: $desktop)  {
+            margin-bottom: 50px;
+                          
+        }
+        
+        &__item {
+          
+          margin-left: 8px;
+          margin-top: 15px;
           }
 
       &__button {
@@ -26,7 +37,7 @@
 
         transition: background-color var(--ttime) var(--cubic), color var(--ttime) var(--cubic),
           box-shadow var(--ttime) var(--cubic);
-          margin-bottom: 15px;
+          // margin-bottom: 15px;
 
             &--active:hover,
             &--active:focus {
@@ -36,10 +47,8 @@
               box-shadow: var(--box-shadows-btn);
             }
       }
-        &__item {
-          margin-right: 8px;
-        }
-        &__item--margin {
-          margin-right: 0px;
-        }
+
+        
 }
+        
+
