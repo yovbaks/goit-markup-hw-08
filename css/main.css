@@ -242,6 +242,7 @@ li {
   .site-nav {
     display: flex;
     align-items: center;
+    z-index: 1;
   }
 }
 
@@ -1173,6 +1174,7 @@ li {
 }
 
 .backdrop {
+  z-index: 20;
   position: fixed;
   top: 0;
   left: 0;
