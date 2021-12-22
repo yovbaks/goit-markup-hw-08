@@ -205,10 +205,6 @@ li {
   }
 }
 
-.menu-button-open {
-  margin: 10px 0px;
-}
-
 .menu-button-close {
   position: absolute;
   top: 10px;
@@ -236,6 +232,10 @@ li {
 .menu-button-close:hover,
 .menu-button-close:focus {
   fill: var(--theme-color);
+}
+
+.menu-button-open {
+  padding: 10px 0px;
 }
 
 @media screen and (min-width: 768px) {

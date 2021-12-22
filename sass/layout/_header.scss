@@ -50,9 +50,7 @@
   }
 }
 
-.menu-button-open {
-  margin: 10px 0px;
-}
+
 .menu-button-close {
   position: absolute;
   top: 10px;
@@ -76,6 +74,9 @@
   &:focus {
     fill: var(--theme-color);
   }
+}
+.menu-button-open {
+  padding: 10px 0px;
 }
 
 .site-nav {
