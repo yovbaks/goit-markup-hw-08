@@ -23,27 +23,63 @@
     <title>Портфолио</title>
   </head>
   <body>
-    <header class="container page-header">
-      <nav class="site-nav">
-        <div class="site-nav__wrap">
-          <a href="./index.html" class="logo"><span class="logo__first-part">Web</span>Studio</a>
-          <button type="button" class="menu-button" aria-expanded="false" js-open-menu>
-            <svg width="40" height="40" aria-label="Переключатель мобільного меню">
-              <use class="icon-menu" href="images/icons.svg#menu"></use>
-              <!-- <use class="icon-cross" href="images/icons.svg#menu-cross"></use> -->
-            </svg>
-          </button>
-        </div>
-        <!-- <div class="mobile-menu-container">Контент меню</div> -->
-        <div class="menu-container">
+   <header class="page-header">
+      <div class="container">
+        <nav class="site-nav">
+          <div class="site-nav__wrap">
+            <a href="./index.html" class="logo"><span class="logo__first-part">Web</span>Studio</a>
+            <button type="button" class="menu-button-open js-open-menu" aria-expanded="false">
+              <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+                <use class="icon-menu" href="images/icons.svg#menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu-container js-menu-container">
+            <button type="button" class="menu-button-close js-close-menu">
+              <svg width="40" height="40" aria-label="Закрытие мобильного меню">
+                <use class="icon-menu" href="images/icons.svg#menu-cross"></use>
+                <
+              </svg>
+            </button>
+            <div class="menu-container">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link ">Студия</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+                </li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+              </ul>
+
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link">
+                    <svg width="16px" height="12px" class="contacts__icon">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+38096111111" class="contacts__link">
+                    <svg width="10px" height="16px" class="contacts__icon">
+                      <use href="./images/icons.svg#tel"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="menu-container">
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
           </ul>
@@ -57,7 +93,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="contacts__item contacts__item--margin">
+            <li class="contacts__item">
               <a href="tel:+38096111111" class="contacts__link">
                 <svg width="10px" height="16px" class="contacts__icon">
                   <use href="./images/icons.svg#tel"></use>
@@ -66,8 +102,23 @@
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </div> -->
+          <!-- <ul class="header-social">
+						<li class="header-social__item">
+							<a class="header-social__link" href="">Instagram</a>
+						</li>
+						<li class="header-social__item">
+							<a class="header-social__link" href="">Twitter</a>
+						</li>
+						<li class="header-social__item">
+							<a class="header-social__link" href="">Facebook</a>
+						</li>
+						<li class="header-social__item">
+							<a class="header-social__link" href="">LinkedIn</a>
+						</li>
+					</ul> -->
+        </nav>
+      </div>
     </header>
 
     <main>
