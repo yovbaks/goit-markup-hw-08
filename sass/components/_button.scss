@@ -1,29 +1,28 @@
 .button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: inherit;
-	font-weight: 700;
-	line-height: 1.87;
-	text-align: center;
-	letter-spacing: 0.06em;
-    cursor: pointer;
-	min-width: 200px;
-	background-color: var(--theme-color);
-	color: var(--white-color);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  min-width: 200px;
+  background-color: var(--theme-color);
+  color: var(--white-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
 
-	transition: background-color var(--ttime) var(--cubic);
-	margin-right: auto;
-	margin-left: auto;
+  transition: background-color var(--ttime) var(--cubic);
+  margin-right: auto;
+  margin-left: auto;
 
-	&:hover,
-	&:focus {
-		background-color: #188ce8;
-	}
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
-

@@ -151,7 +151,7 @@ li {
 
 .mobile-menu-container {
   flex-grow: 1;
-  z-index: 5;
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
@@ -180,6 +180,15 @@ li {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
@@ -192,9 +201,6 @@ li {
 
 @media screen and (min-width: 1200px) {
   .menu-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-left: 88px;
   }
 }
@@ -251,27 +257,37 @@ li {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-nav__list {
-    display: flex;
+@media screen and (max-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--title-color);
   transition: color var(--ttime) var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    display: block;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .site-nav__link:hover, .site-nav__link:focus {
@@ -301,6 +317,11 @@ li {
   }
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
@@ -313,6 +334,12 @@ li {
   .contacts {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__item:first-child {
+    margin-top: 32px;
   }
 }
 
@@ -331,12 +358,9 @@ li {
 }
 
 .contacts__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.17;
   font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
   color: var(--text-color);
   fill: var(--clients-color);
@@ -345,8 +369,13 @@ li {
 
 @media screen and (min-width: 768px) {
   .contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
     line-height: 1.17;
     font-weight: 500;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -362,8 +391,70 @@ li {
   fill: var(--theme-color);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__link--tel {
+    font-size: 34px;
+    line-height: 1.17;
+    color: var(--theme-color);
+  }
+}
+
 .contacts__icon {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.header-social:first-child {
+  padding-left: 0;
+}
+
+.header-social:last-child {
+  border-right: none;
+}
+
+.header-social__item {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header-social__item:first-child {
+  padding-left: 0;
+}
+
+.header-social__item:last-child {
+  border-right: none;
+}
+
+.header-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--theme-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-social {
+    display: none;
+  }
 }
 
 .hero {
@@ -1258,8 +1349,6 @@ li {
 }
 
 .checkbox__text {
-  display: flex;
-  align-items: center;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -1267,13 +1356,19 @@ li {
 }
 
 .checkbox__policy {
+  display: inline;
   color: var(--theme-color);
   text-decoration: underline;
   margin-left: 5px;
 }
 
-.checkbox__item {
+.checkbox__thumb {
   display: flex;
+  align-items: center;
+}
+
+.checkbox__item {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;

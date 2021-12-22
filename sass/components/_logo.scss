@@ -1,32 +1,18 @@
 .logo {
-      display: block;
-      font-family: Raleway;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-      color: black;
-      // padding: 16px 0;
+  display: block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
 
-
-          // @media screen and (min-width: $tablet){
-          //     font-size: 24px;
-          //     line-height: 1.17;
-                              
-          // }
-          @media screen and (min-width: $desktop){
-             
-              font-size: 26px;
-              line-height: 1.19;
-                          
-          }
-  
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
-.logo__first-part{
+.logo__first-part {
   color: var(--theme-color);
 }
-
-// .footer-logo {
-  
-// }

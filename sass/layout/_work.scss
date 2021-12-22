@@ -1,46 +1,44 @@
 .work {
   padding-bottom: 94px;
-      @media screen and (max-width: 1200px) {
-        display: none;
-      }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 
-        &__list {
-            display: flex;
-            justify-content: center;
-            margin: 0 auto;
-          }
-        &__item {
-            position: relative;
-            margin-left: 30px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__item {
+    position: relative;
+    margin-left: 30px;
 
-                &::before {
-                  position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    display: inline-block;
-                    content: '';                    
-                    width: 370px;
-                    height: 70px;
-                    background-color: rgba(47, 48, 58, 0.8);
-                  }
-          }
-        
-        &__item--margin {
-            margin-left: 0px;
-          }
-        &__text {
-              position: absolute;
-              bottom: 27px;
-              left: 83px;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: inline-block;
+      content: '';
+      width: 370px;
+      height: 70px;
+      background-color: rgba(47, 48, 58, 0.8);
+    }
+  }
 
-              font-weight: 700;
-              font-size: 14px;
-              line-height: 1.14;
-              text-align: center;
-              letter-spacing: 0.03em;
-              text-transform: uppercase;
+  &__item--margin {
+    margin-left: 0px;
+  }
+  &__text {
+    position: absolute;
+    bottom: 27px;
+    left: 83px;
 
-              color: var(--white-color);
-            }
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
 }
-

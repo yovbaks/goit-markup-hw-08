@@ -1,105 +1,84 @@
 .team {
   background-color: var(--bgcolor2);
 
-      &__list {
-           
-      @media screen and (min-width: 768px){
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin-left: -30px;
-          margin-top: -30px;
-          
-     }
-     // @media screen and (min-width: $desktop){
-          
-     //      margin-left: 0px;
-          
-     // }
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+  }
 
+  &__item {
+    width: 100%;
+    box-shadow: var(--box-shadows);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+
+    @media screen and (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
       }
+    }
 
-      &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+    }
+  }
 
-          width: 100%;
-          box-shadow: var(--box-shadows);
-          border-radius: 0px 0px 4px 4px;
-          background-color: #ffffff;
-          // margin-bottom: 30px;
+  &__thumb {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-          @media screen and (max-width:$tablet) {
-             &:not(:last-child){
-               margin-bottom: 30px;
-          }  
-          }
-          
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 10px;
+  }
 
-          
-          @media screen and (min-width: 768px)  {
-                    flex-basis: calc(100% / 2 - 30px);
-                    margin-left: 30px;
-                    margin-top: 30px;
-          }
-          @media screen and (min-width: 1200px)  {
-               flex-basis: calc(100% / 4 - 30px);
-               margin-left: 30px;
-          }
-                    }
-     //  &__item--margin {
-     //       @media screen and (min-width: 1200px)  {
-     //           margin-right: 0px;
-     //      }
-           
-     //  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
 
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--clients-color);
+    border-radius: 50%;
 
-      &__thumb {
-           text-align: center;
-           padding-top: 30px;
-           padding-bottom: 30px;
-           
-      } 
+    transition: background-color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
 
-      &__title {
-           font-weight: 500;
-           font-size: 16px;
-           line-height: 1.2;
-           letter-spacing: 0.03em;
-           color: var(--title-color);
-           margin-bottom: 10px;
-     }
-
-     &__text {
-           font-size: 16px;
-           line-height: 1.2;
-           letter-spacing: 0.03em;
-           margin-bottom: 16px;
-     }
-
-     &__social {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-     }
-
-     &__icon {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 44px;
-          height: 44px;
-          background-color: rgba(255, 255, 255, 0.1);
-          fill: var(--clients-color);
-          border-radius: 50%;
-          
-          transition: background-color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
-              
-              &:hover,
-              &:focus {
-                fill: var(--white-color);
-                background-color: var(--theme-color);
-                background-size: 44px;
-              }
-       }
+    &:hover,
+    &:focus {
+      fill: var(--white-color);
+      background-color: var(--theme-color);
+      background-size: 44px;
+    }
+  }
 }

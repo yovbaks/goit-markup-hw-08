@@ -1,54 +1,47 @@
 .filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-left: -8px;
+  margin-top: -15px;
+
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    margin-left: -8px;
-	  margin-top: -15px;
+    justify-content: center;
+    align-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
-        @media screen and (min-width: $tablet)  {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-                          
-        }
-        @media screen and (min-width: $desktop)  {
-            margin-bottom: 50px;
-                          
-        }
-        
-        &__item {
-          
-          margin-left: 8px;
-          margin-top: 15px;
-          }
+  &__item {
+    margin-left: 8px;
+    margin-top: 15px;
+  }
 
-      &__button {
-        min-width: 73px;
-        padding: 6px 22px;
-        color: var(--title-color);
-        background-color: var(--bgcolor2);
-        border-color: var(--bgcolor2);
-        box-shadow: none;
-        
-        border-style: none;
-        box-shadow: var(--box-shadow);
-        border-radius: 4px;
+  &__button {
+    min-width: 73px;
+    padding: 6px 22px;
+    color: var(--title-color);
+    background-color: var(--bgcolor2);
+    border-color: var(--bgcolor2);
+    box-shadow: none;
 
-        transition: background-color var(--ttime) var(--cubic), color var(--ttime) var(--cubic),
-          box-shadow var(--ttime) var(--cubic);
-          // margin-bottom: 15px;
+    border-style: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
 
-            &--active:hover,
-            &--active:focus {
-              color: var(--white-color);
-              background-color: var(--theme-color);
-              border-color: var(--theme-color);
-              box-shadow: var(--box-shadows-btn);
-            }
-      }
+    transition: background-color var(--ttime) var(--cubic), color var(--ttime) var(--cubic),
+      box-shadow var(--ttime) var(--cubic);
+  
 
-        
+    &--active:hover,
+    &--active:focus {
+      color: var(--white-color);
+      background-color: var(--theme-color);
+      border-color: var(--theme-color);
+      box-shadow: var(--box-shadows-btn);
+    }
+  }
 }
-        
-
