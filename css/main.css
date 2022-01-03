@@ -156,7 +156,6 @@ li {
 
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -164,12 +163,15 @@ li {
     height: 100%;
     padding: 48px 40px;
     background-color: var(--white-color);
+    transform: translatex(100%);
+    transition: transform var(--ttime) var(--cubic);
   }
   .mobile-menu-container.is-open {
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transform: translatex(0);
   }
 }
 
