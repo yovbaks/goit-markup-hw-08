@@ -273,6 +273,7 @@ li {
 }
 
 .site-nav__link {
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
